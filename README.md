@@ -18,11 +18,9 @@ conda create --name my_env python=3.8
 conda activate my_env
 pip install -r requirements.txt
 ```
-Please use official CLIP repository for instructions on installing CLIP.
 
 ## Data preparation
 If you already have CIFAR-100 or ImageNet-R, pass your dataset path to  `--data-path`.
-
 
 The datasets aren't ready, change the download argument in `datasets.py` as follows
 
