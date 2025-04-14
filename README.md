@@ -1,7 +1,8 @@
 # Introducing Language Guidance in Prompt Based Continual Learning 
-![architecture](https://github.com/gulzainali98/LGCL/blob/main/LGCL.png)
+![architecture](https://github.com/JNCS-NLP-LLK/-/blob/main/KG-Prompt.png)
 
-This repository contains official PyTorch implementation code for Introducting Language Guidance in Prompt Based Continual Learning <a href="https://arxiv.org/pdf/2112.08654.pdf">LGCL</a>.
+This repository contains official PyTorch implementation code for Knowledge-guided prompt-based continual learning: Aligning task-prompts
+through contrastive hard negatives <a href="https://arxiv.org/pdf/2112.08654.pdf">LGCL</a>.
 
 
 
