@@ -39,36 +39,28 @@ Imagenet_R(download=True)
 Example Template
 
 ```
-python main.py [config file] [args]
-```
-
-To train a model via command line on CIFAR-100 dataset:
-
-```
-python main.py cifar100_lgcl --model vit_base_patch16_224 --data-path /local-datasets/
+sh run.sh
 ```
 
 ## Evaluation
 To evaluate a trained model:
 ```
-python --use_env main.py <cifar100_lgcl or imr_lgcl> --eval
+python main.py <cifar100_lgcl or imr_lgcl> --eval
 ```
 
-
-## License
-This repository is released under the Apache 2.0 license as found in the [LICENSE](LICENSE) file.
+## Acknowledgement
+We refer to the code of LGCL. Thanks for their great contributions!
 
 ## Cite
 
 ```
-@inproceedings{khan2023introducing,
-  title={Introducing language guidance in prompt-based continual learning},
-  author={Khan, Muhammad Gul Zain Ali and Naeem, Muhammad Ferjad and Van Gool, Luc and Stricker, Didier and Tombari, Federico and Afzal, Muhammad Zeshan},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  pages={11463--11473},
-  year={2023}
+@article{lu2025knowledge,
+  title={Knowledge-guided prompt-based continual learning: Aligning task-prompts through contrastive hard negatives},
+  author={Lu, Heng-yang and Lin, Long-kang and Fan, Chenyou and Wang, Chongjun and Fang, Wei and Wu, Xiao-jun},
+  journal={Knowledge-Based Systems},
+  pages={113009},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
-
-Thanks @JH-LEE-KR for providing the <a href="https://github.com/JH-LEE-KR/dualprompt-pytorch"> DualPrompt</a> pytorch code which was used in this repository. 
