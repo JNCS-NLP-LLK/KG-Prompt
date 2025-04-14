@@ -2,7 +2,7 @@
 ![architecture](https://github.com/JNCS-NLP-LLK/-/blob/main/KG-Prompt.png)
 
 This repository contains official PyTorch implementation code for Knowledge-guided prompt-based continual learning: Aligning task-prompts
-through contrastive hard negatives <a href="https://arxiv.org/pdf/2112.08654.pdf">KG-Prompt</a>.
+through contrastive hard negatives <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705125000577">KG-Prompt</a>.
 
 
 
