@@ -1,13 +1,8 @@
 import argparse
-def str_to_bool(value):
-    if value.lower() in {'false', 'f', '0', 'no', 'n'}:
-        return False
-    elif value.lower() in {'true', 't', '1', 'yes', 'y'}:
-        return True
-    raise ValueError(f'{value} is not a valid boolean value')
+
 def get_args_parser(subparsers):
     subparsers.add_argument('--batch-size', default=24, type=int, help='Batch size per device')
-    subparsers.add_argument('--epochs', default=20, type=int)
+    subparsers.add_argument('--epochs', default=60, type=int)
 
     # Model parameters
     subparsers.add_argument('--model', default='vit_base_patch16_224', type=str, metavar='MODEL', help='Name of model to train')
@@ -19,12 +14,11 @@ def get_args_parser(subparsers):
     subparsers.add_argument('--use_task', type=int, default=1, help= "task level lgcl")
     subparsers.add_argument('--task_weight', type=float, default=0.323, help= "task level lgcl weight")
     subparsers.add_argument('--class_weight', type=float, default=0.137, help= "class level lgcl weight")
-    subparsers.add_argument('--tf_weight1', type=float, default=0.2, help= "fusion base tl weight")
-    subparsers.add_argument('--tf_weight2', type=float, default=0.8, help= "fusion super tl weight")
-    subparsers.add_argument('--cf_weight1', type=float, default=0.2, help= "fusion base tl weight")
-    subparsers.add_argument('--cf_weight2', type=float, default=0.8, help= "fusion super tl weight")
-    subparsers.add_argument('--clk', type=float, default=6, help= "class level lgcl weight")
-
+    subparsers.add_argument('--tf_weight1', type=float, default=0.5, help= "fusion base tl weight")
+    subparsers.add_argument('--tf_weight2', type=float, default=0.5, help= "fusion super tl weight")
+    subparsers.add_argument('--cf_weight1', type=float, default=0.5, help= "fusion base cl weight")
+    subparsers.add_argument('--cf_weight2', type=float, default=0.5, help= "fusion super cl weight")
+    subparsers.add_argument('--clk', type=float, default=7, help= "class level lgcl weight")
 
     # Optimizer parameters
     subparsers.add_argument('--opt', default='adam', type=str, metavar='OPTIMIZER', help='Optimizer (default: "adam"')
@@ -37,7 +31,7 @@ def get_args_parser(subparsers):
 
     # Learning rate schedule parameters
     subparsers.add_argument('--sched', default='constant', type=str, metavar='SCHEDULER', help='LR scheduler (default: "constant"')
-    subparsers.add_argument('--lr', type=float, default=0.03, metavar='LR', help='learning rate (default: 0.03)')
+    subparsers.add_argument('--lr', type=float, default=0.005, metavar='LR', help='learning rate (default: 0.03)')
     subparsers.add_argument('--lr-noise', type=float, nargs='+', default=None, metavar='pct, pct', help='learning rate noise on/off epoch percentages')
     subparsers.add_argument('--lr-noise-pct', type=float, default=0.67, metavar='PERCENT', help='learning rate noise limit percent (default: 0.67)')
     subparsers.add_argument('--lr-noise-std', type=float, default=1.0, metavar='STDDEV', help='learning rate noise std-dev (default: 1.0)')
@@ -65,8 +59,8 @@ def get_args_parser(subparsers):
     subparsers.add_argument('--recount', type=int, default=1, help='Random erase count (default: 1)')
 
     # Data parameters
-    subparsers.add_argument('--data-path', default='./local-datasets', type=str, help='dataset path')
-    subparsers.add_argument('--dataset', default='Split-CIFAR100', type=str, help='dataset name')
+    subparsers.add_argument('--data-path', default='local-datasets/', type=str, help='dataset path')
+    subparsers.add_argument('--dataset', default='Split-Imagenet-R', type=str, help='dataset name')
     subparsers.add_argument('--shuffle', default=False, help='shuffle the data order')
     subparsers.add_argument('--output_dir', default='./output', help='path where to save, empty for no saving')
     subparsers.add_argument('--device', default='cuda', help='device to use for training / testing')
@@ -95,10 +89,11 @@ def get_args_parser(subparsers):
     subparsers.add_argument('--g_prompt_layer_idx', default=[0, 1], type=int, nargs = "+", help='the layer index of the G-Prompt')
     subparsers.add_argument('--use_prefix_tune_for_g_prompt', default=True, type=bool, help='if using the prefix tune for G-Prompt')
     
-
     # E-Prompt parameters
-    subparsers.add_argument('--use_e_prompt',type=str_to_bool, nargs='?', const=True, default=True, help='if using the E-Prompt')
+    subparsers.add_argument('--use_e_prompt', default=True, type=bool, help='if using the E-Prompt')
     subparsers.add_argument('--e_prompt_layer_idx', default=[4, 5, 6], type=int, nargs = "+", help='the layer index of the E-Prompt')
+    #subparsers.add_argument('--e_prompt_layer_idx', default=[5, 6, 7], type=int, nargs = "+", help='the layer index of the E-Prompt')
+
     subparsers.add_argument('--use_prefix_tune_for_e_prompt', default=True, type=bool, help='if using the prefix tune for E-Prompt')
 
     # Use prompt pool in L2P to implement E-Prompt
@@ -113,13 +108,12 @@ def get_args_parser(subparsers):
     subparsers.add_argument('--mask_first_epoch', default=False, type=bool)
     subparsers.add_argument('--shared_prompt_pool', default=True, type=bool)
     subparsers.add_argument('--shared_prompt_key', default=False, type=bool)
-    subparsers.add_argument('--batchwise_prompt', default=True, type=bool)
+    subparsers.add_argument('--batchwise_prompt', default=False, type=bool)
     subparsers.add_argument('--embedding_key', default='cls', type=str)
     subparsers.add_argument('--predefined_key', default='', type=str)
     subparsers.add_argument('--pull_constraint', default=True)
     subparsers.add_argument('--pull_constraint_coeff', default=1.0, type=float)
     subparsers.add_argument('--same_key_value', default=False, type=bool)
-
 
     # ViT parameters
     subparsers.add_argument('--global_pool', default='token', choices=['token', 'avg'], type=str, help='type of global pooling for final sequence')
