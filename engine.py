@@ -326,10 +326,10 @@ def evaluate_till_now(model: torch.nn.Module, original_model: torch.nn.Module, d
 
         result_str += "\tForgetting: {:.4f}\tBackward: {:.4f}".format(forgetting, backward)
     print(result_str)
-    file_path = "./file.txt"  # 替换为实际的文件路径
+    '''file_path = "./file.txt"  # 替换为实际的文件路径
         # 打开文件并写入内容
     with open(file_path, "a") as file:
-        file.write(result_str+'\n')
+        file.write(result_str+'\n')'''
 
     return test_stats
 def train_and_evaluate(model: torch.nn.Module, model_without_ddp: torch.nn.Module, original_model: torch.nn.Module, 
