@@ -9,8 +9,8 @@ through contrastive hard negatives <a href="https://arxiv.org/pdf/2112.08654.pdf
 ## Usage
 First, clone the repository locally:
 ```
-git clone https://github.com/gulzainali98/LGCL
-cd LGCL
+git clone https://github.com/JNCS-NLP-LLK/KG-Prompt
+cd KG-Prompt
 ```
 Then, install the packages below:
 ```
