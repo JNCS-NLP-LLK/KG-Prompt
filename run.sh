@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=1 python main.py cifar100_lgcl --batch-size 24 --epochs 20 --data-path ./local_datasets --seed 42
+#CUDA_VISIBLE_DEVICES=0 python main.py imr_lgcl --batch-size 24 --data-path ./local_datasets --seed 42

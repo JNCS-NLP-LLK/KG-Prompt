@@ -1,0 +1,100 @@
+belongs to fruit and vegetables
+belongs to fish
+belongs to people
+belongs to large carnivores
+belongs to aquatic mammals
+belongs to household furniture
+belongs to insects
+belongs to insects
+belongs to land transportation
+belongs to food containers
+belongs to food containers
+belongs to people
+belongs to man made outdoor things
+belongs to land transportation
+belongs to insects
+belongs to large omnivores and herbivores
+belongs to food containers
+belongs to man made outdoor things
+belongs to insects
+belongs to large omnivores and herbivores
+belongs to household furniture
+belongs to large omnivores and herbivores
+belongs to household electrical devices
+belongs to large natural outdoor scenes
+belongs to insects
+belongs to household furniture
+belongs to non insect invertebrates
+belongs to reptiles
+belongs to food containers
+belongs to reptiles
+belongs to aquatic mammals
+belongs to large omnivores and herbivores
+belongs to fish
+belongs to large natural outdoor scenes
+belongs to medium sized mammals
+belongs to people
+belongs to small mammals
+belongs to man made outdoor things
+belongs to large omnivores and herbivores
+belongs to household electrical devices
+belongs to household electrical devices
+belongs to specialty vehicles
+belongs to large carnivores
+belongs to large carnivores
+belongs to reptiles
+belongs to non insect invertebrates
+belongs to people
+belongs to trees
+belongs to land transportation
+belongs to large natural outdoor scenes
+belongs to small mammals
+belongs to fruit and vegetables
+belongs to trees
+belongs to fruit and vegetables
+belongs to flowers
+belongs to aquatic mammals
+belongs to trees
+belongs to fruit and vegetables
+belongs to land transportation
+belongs to trees
+belongs to large natural outdoor scenes
+belongs to food containers
+belongs to flowers
+belongs to medium sized mammals
+belongs to medium sized mammals
+belongs to small mammals
+belongs to medium sized mammals
+belongs to fish
+belongs to man made outdoor things
+belongs to specialty vehicles
+belongs to flowers
+belongs to large natural outdoor scenes
+belongs to aquatic mammals
+belongs to fish
+belongs to small mammals
+belongs to medium sized mammals
+belongs to man made outdoor things
+belongs to non insect invertebrates
+belongs to reptiles
+belongs to non insect invertebrates
+belongs to small mammals
+belongs to specialty vehicles
+belongs to flowers
+belongs to fruit and vegetables
+belongs to household furniture
+belongs to specialty vehicles
+belongs to household electrical devices
+belongs to household electrical devices
+belongs to large carnivores
+belongs to specialty vehicles
+belongs to land transportation
+belongs to fish
+belongs to flowers
+belongs to reptiles
+belongs to household furniture
+belongs to aquatic mammals
+belongs to trees
+belongs to large carnivores
+belongs to people
+belongs to non insect invertebrates

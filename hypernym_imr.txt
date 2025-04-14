@@ -1,0 +1,200 @@
+goldfish belongs to aquatic animals
+great white shark belongs to aquatic animals
+hammerhead belongs to aquatic animals
+stingray belongs to aquatic animals
+hen belongs to birds
+ostrich belongs to birds
+goldfinch belongs to birds
+junco belongs to birds
+bald eagle belongs to birds
+vulture belongs to birds
+newt belongs to amphibian
+axolotl belongs to amphibian
+tree frog belongs to amphibian
+iguana belongs to reptiles
+African chameleon belongs to reptiles
+cobra belongs to reptiles
+scorpion belongs to insects
+tarantula belongs to insects
+centipede belongs to insects
+peacock belongs to birds
+lorikeet belongs to birds
+hummingbird belongs to birds
+toucan belongs to birds
+duck belongs to birds
+goose belongs to birds
+black swan belongs to birds
+koala belongs to other mammals
+jellyfish belongs to aquatic animals
+snail belongs to mollusk
+lobster belongs to aquatic animals
+hermit crab belongs to aquatic animals
+flamingo belongs to birds
+american egret belongs to birds
+pelican belongs to birds
+king penguin belongs to birds
+grey whale belongs to mammals
+killer whale belongs to mammals
+sea lion belongs to mammals
+chihuahua belongs to canids
+shih tzu belongs to canids
+afghan hound belongs to canids
+basset hound belongs to canids
+beagle belongs to canids
+bloodhound belongs to canids
+italian greyhound belongs to canids
+whippet belongs to canids
+weimaraner belongs to canids
+yorkshire terrier belongs to canids
+boston terrier belongs to canids
+scottish terrier belongs to canids
+west highland white terrier belongs to canids
+golden retriever belongs to canids
+labrador retriever belongs to canids
+cocker spaniels belongs to canids
+collie belongs to canids
+border collie belongs to canids
+rottweiler belongs to canids
+german shepherd dog belongs to canids
+boxer belongs to canids
+french bulldog belongs to canids
+saint bernard belongs to canids
+husky belongs to canids
+dalmatian belongs to canids
+pug belongs to canids
+pomeranian belongs to canids
+chow chow belongs to canids
+pembroke welsh corgi belongs to canids
+toy poodle belongs to canids
+standard poodle belongs to canids
+timber wolf belongs to canids
+hyena belongs to canids
+red fox belongs to canids
+tabby cat belongs to felines
+leopard belongs to carnivore
+snow leopard belongs to carnivore
+lion belongs to carnivore
+tiger belongs to carnivore
+cheetah belongs to carnivore
+polar bear belongs to carnivore
+meerkat belongs to carnivore
+ladybug belongs to insects
+fly belongs to insects
+bee belongs to insects
+ant belongs to insects
+grasshopper belongs to insects
+cockroach belongs to insects
+mantis belongs to insects
+dragonfly belongs to insects
+monarch butterfly belongs to insects
+starfish belongs to aquatic animals
+wood rabbit belongs to small mammals
+porcupine belongs to small mammals
+fox squirrel belongs to small mammals
+beaver belongs to small mammals
+guinea pig belongs to small mammals
+zebra belongs to other mammals
+pig belongs to other mammals
+hippopotamus belongs to other mammals
+bison belongs to other mammals
+gazelle belongs to other mammals
+llama belongs to other mammals
+skunk belongs to other mammals
+badger belongs to other mammals
+orangutan belongs to other mammals
+gorilla belongs to other mammals
+chimpanzee belongs to other mammals
+gibbon belongs to other mammals
+baboon belongs to other mammals
+panda belongs to other mammals
+eel belongs to aquatic animals
+clown fish belongs to aquatic animals
+puffer fish belongs to aquatic animals
+accordion belongs to musical instruments
+ambulance belongs to motor vehicle
+assault rifle belongs to automatic weapon
+backpack belongs to container
+barn belongs to buildings
+wheelbarrow belongs to vehicles
+basketball belongs to ball
+bathtub belongs to container
+lighthouse belongs to buildings
+beer glass belongs to tableware
+binoculars belongs to military weapons
+birdhouse belongs to buildings
+bow tie belongs to clothing accessories
+broom belongs to tools
+bucket belongs to container
+cauldron belongs to tools
+candle belongs to tools
+cannon belongs to military weapons
+canoe belongs to vehicles
+carousel belongs to tools
+castle belongs to buildings
+mobile phone belongs to tools
+cowboy hat belongs to clothing accessories
+electric guitar belongs to musical instruments
+fire engine belongs to vehicles
+flute belongs to musical instruments
+gasmask belongs to clothing accessories
+grand piano belongs to musical instruments
+guillotine belongs to tools
+hammer belongs to tools
+harmonica belongs to musical instruments
+harp belongs to musical instruments
+hatchet belongs to tools
+jeep belongs to vehicles
+joystick belongs to tools
+lab coat belongs to clothing accessories
+lawn mower belongs to tools
+lipstick belongs to tools
+mailbox belongs to tools
+missile belongs to military weapons
+mitten belongs to clothing accessories
+parachute belongs to tools
+pickup truck belongs to vehicles
+pirate ship belongs to vehicles
+revolver belongs to military weapons
+rugby ball belongs to ball
+sandal belongs to clothing accessories
+saxophone belongs to musical instruments
+school bus belongs to vehicles
+schooner belongs to vehicles
+shield belongs to tools
+soccer ball belongs to ball
+space shuttle belongs to vehicles
+spider web belongs to tools
+steam locomotive belongs to vehicles
+scarf belongs to clothing accessories
+submarine belongs to vehicles
+tank belongs to vehicles
+tennis ball belongs to ball
+tractor belongs to vehicles
+trombone belongs to musical instruments
+vase belongs to container
+violin belongs to musical instruments
+military aircraft belongs to vehicles
+wine bottle belongs to container
+ice cream belongs to food
+bagel belongs to food
+pretzel belongs to food
+cheeseburger belongs to food
+hotdog belongs to food
+cabbage belongs to vegetable
+broccoli belongs to vegetable
+cucumber belongs to vegetable
+bell pepper belongs to vegetable
+mushroom belongs to vegetable
+Granny Smith belongs to fruit
+strawberry belongs to fruit
+lemon belongs to fruit
+pineapple belongs to fruit
+banana belongs to fruit
+pomegranate belongs to fruit
+pizza belongs to food
+burrito belongs to food
+espresso belongs to food
+volcano belongs to natural landscapes
+baseball player belongs to person
+scuba diver belongs to person
+acorn belongs to food
