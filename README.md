@@ -2,23 +2,21 @@
 ![architecture](https://github.com/JNCS-NLP-LLK/-/blob/main/KG-Prompt.png)
 
 This repository contains official PyTorch implementation code for Knowledge-guided prompt-based continual learning: Aligning task-prompts
-through contrastive hard negatives <a href="https://arxiv.org/pdf/2112.08654.pdf">LGCL</a>.
+through contrastive hard negatives <a href="https://arxiv.org/pdf/2112.08654.pdf">KG-Prompt</a>.
 
 
 
-## Usage
+## Installation
 First, clone the repository locally:
 ```
 git clone https://github.com/JNCS-NLP-LLK/KG-Prompt
 cd KG-Prompt
 ```
-Then, install the packages below:
+Then, create a conda environment with pytorch and scikit-learn
 ```
-pytorch==1.12.1
-torchvision==0.13.1
-timm==0.6.7
-pillow==9.2.0
-matplotlib==3.5.3
+conda create --name my_env python=3.8
+conda activate my_env
+pip install -r requirements.txt
 ```
 Please use official CLIP repository for instructions on installing CLIP.
 
