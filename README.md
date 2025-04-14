@@ -1,4 +1,4 @@
-# Introducing Language Guidance in Prompt Based Continual Learning 
+# Knowledge-guided prompt-based continual learning: Aligning task-prompts through contrastive hard negatives 
 ![architecture](https://github.com/JNCS-NLP-LLK/-/blob/main/KG-Prompt.png)
 
 This repository contains official PyTorch implementation code for Knowledge-guided prompt-based continual learning: Aligning task-prompts
